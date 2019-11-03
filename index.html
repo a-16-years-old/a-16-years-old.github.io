@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>游洋洋的个人博客</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<link type="image/x-icon" rel="shortcut icon" href="ico.ico">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<style>
+		.logo {
+			border-radius: 50%
+		}
+
+		.IMGTitle {
+			position: absolute;
+			width: 100%;
+			height: 40px;
+			background: #1e0d0d;
+			opacity: 0.3;
+			;
+			bottom: 10%;
+			text-align: center;
+			font-size: 28px;
+			color: #ffffee
+		}
+	</style>
+</head>
+
+<body>
+	<!-- container -->
+	<!-- header -->
+	<div id="home" class="header">
+		<div class="container">
+			<!-- top-hedader -->
+			<div class="top-header">
+				<!-- /logo -->
+				<!--top-nav---->
+				<div class="top-nav">
+					<div class="navigation">
+						<div class="logo">
+							<h1><a href="index.html"><span>U</span>YangYang</a></h1>
+						</div>
+						<div class="navigation-right">
+							<span class="menu"><img src="images/menu.png" alt=" " /></span>
+							<nav class="link-effect-3" id="link-effect-3">
+								<ul class="nav1 nav nav-wil">
+									<li class="active"><a data-hover="Home" href="index.html">首页</a></li>
+									<li><a class="scroll" data-hover="About" href="#about">关于我</a></li>
+									<li><a class="scroll" data-hover="Experience" href="#work">我的项目</a></li>
+									<li><a class="scroll" data-hover="Portfolio" href="#port">我的作品</a></li>
+									<li><a class="scroll" data-hover="Blog" href="#blog">博文</a></li>
+								</ul>
+							</nav>
+							<!-- script-for-menu -->
+							<script>
+								$("span.menu").click(function () {
+									$("ul.nav1").slideToggle(300, function () {
+										// Animation complete.
+									});
+								});
+							</script>
+							<!-- /script-for-menu -->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<!-- /top-hedader -->
+				</div>
+				<div class="banner-info">
+					<div class="col-md-7 header-right">
+						<h1>Hi </h1>
+						<h6>我是U_YangYang</h6>
+						<ul class="address">
+
+							<li>
+								<ul class="address-text">
+									<li><b>NAME</b></li>
+									<li>游洋洋</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>D.O.B</b></li>
+									<li>03-04-2002</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>PHONE </b></li>
+									<li>+86 1763 789 543 9</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>ADDRESS </b></li>
+									<li>河南省开封市</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>E-MAIL </b></li>
+									<li><a href="mailto:3051190879@qq.com"> 3051190879@qq.com</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>WEBSITE </b></li>
+									<li><a href="https://a-16-years-old.github.io">https://a-16-years-old.github.io</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-md-5 header-left">
+						<img class="logo" src="images/img1.jpg" alt="">
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- about -->
+	<div id="about" class="about">
+		<div class="col-md-6 about-left">
+			<div id="owl-demo1" class="owl-carousel owl-carousel2">
+				<div class="item">
+					<div class="about-left-grid">
+						<h2>大家好，我是
+							<br>
+							<span>&nbsp;&nbsp;&nbsp;U_YangYang</span></h2>
+						<p>
+							本人是计算机网络技术专业在读生，热爱学习web前端，能熟练运用html5+css3+javascript等生成网页，
+							熟练Bootstrap、MUI等主流框架，懂得两栏自适应、栅格系统等响应式开发，
+						</p>
+						<ul>
+							<li><a class="a-btn-a scroll" href="#port">我的工作</a></li>
+							<li><a class="a-btn-h scroll" href="#contact">联系我</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 about-right">
+
+		</div>
+		<div class="clearfix"> </div>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo1").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: false,
+					pagination: true,
+				});
+			});
+		</script>
+		<!-- Feedback -->
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo3").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: true,
+					pagination: true,
+				});
+			});
+		</script>
+	</div>
+	<!-- /about -->
+	<!-- services -->
+	<div id="services" class="services">
+		<div class="container">
+			<div class="service-head one text-center ">
+				<h4>我所做的</h4>
+				<h3>我的<span>工作</span></h3>
+				<span class="border two"></span>
+			</div>
+			<!-- services-grids -->
+			<div class="wthree_about_right_grids w3l-agile">
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>web前端</h4>
+						<p>...</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-cog"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>web网络安全</h4>
+						<p>...</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-leaf"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>计算机网络技术（网络管理）</h4>
+						<p>...</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-gift"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>...</h4>
+						<p>...</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<!-- services-grids -->
+		</div>
+	</div>
+	<!-- services -->
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<div class="service-head text-center">
+				<h4>我所做的</h4>
+				<h3>我的 <span>项目</span></h3>
+				<span class="border one"></span>
+			</div>
+			<div class="time-main w3l-agile">
+				<div class="col-md-6 year-info">
+					<ul class="year">
+						<li>2019</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<ul class="col-md-6 timeline">
+					<li>
+						<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">全工艺压片设备模拟器<a
+										href="project/全工艺压片设备模拟器/index.html">（点击跳转软件官网）</a></h4>
+
+							</div>
+							<div class="timeline-body">
+								<p>《全工艺压片设备模拟器》是一款能让你随时随地去练习压片的一款软件。
+									软件开发者 : 游洋洋
+									支持操作环境: 所有PC端+iOS+Android
+									软件授权类别: 免费软件
+									软件能够解决的问题
+									学习设备时不能一人配备一台设备供练习。
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
+
+	<!-- portfolio -->
+	<div class="portfolio" id="port">
+		<div class="service-head text-center">
+			<h4>我的作品</h4>
+			<h3>作品 <span>展示</span></h3>
+			<span>(点击图片跳转至项目链接)</span>
+			<span class="border"></span>
+		</div>
+		<div class="portfolio-grids">
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});
+
+			</script>
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>所有</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>响应式</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>框架</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>动画</span></li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+
+							<div class="col-md-3 team-gd ">
+								<span class="IMGTitle">
+									<p>表白网页(canvas动画)</p>
+								</span>
+								<a href="works/confession/index.html"
+									class="portfolio-link b-link-diagonal b-animate-go my-portfolio-link"
+									data-toggle="modal"><img src="images/pic1.gif" alt="">
+
+								</a>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<span class="IMGTitle">
+									<p>产品宣传页(css3动画)</p>
+								</span>
+								<a href="works/cart/index.html"
+									class="portfolio-link b-link-diagonal b-animate-go my-portfolio-link"
+									data-toggle="modal"><img src="images/pic2.gif" alt="">
+								</a>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<span class="IMGTitle">
+									<p>TIM案例(视差滚动)</p>
+								</span>
+								<a href="works/QQTIM/index.html"
+									class="portfolio-link b-link-diagonal b-animate-go my-portfolio-link"
+									data-toggle="modal"><img src="images/pic3.gif" alt="">
+								</a>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<span class="IMGTitle">
+									<p>直男色？</p>
+								</span>
+								<a href="works/red/index.html"
+									class="portfolio-link b-link-diagonal b-animate-go my-portfolio-link"
+									data-toggle="modal"><img src="images/pic4.jpg" alt="">
+								</a>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<span class="IMGTitle">
+									<p>翻页特效</p>
+								</span>
+								<a href="works/page-turning/index.html"
+									class="portfolio-link b-link-diagonal b-animate-go my-portfolio-link"
+									data-toggle="modal"><img src="images/pic5.png" alt="">
+								</a>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--博文-->
+	<div id="blog" class="work">
+		<div class="container">
+			<div class="service-head text-center">
+				<h4>我所写的</h4>
+				<h3>我的 <span>博文</span></h3>
+				<span class="border one"></span>
+			</div>
+			<div class="time-main w3l-agile">
+				<div class="col-md-6 year-info">
+					<ul class="year">
+						<li>2019.09.03</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<ul class="col-md-6 timeline">
+					<li>
+						<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">
+									<a href="bowens/RenShi-html.html">认识HTML</a>
+								</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									告诉电脑【我要做网页】 <br>
+									HTML中的基本结构  <br>
+									写一个小页面  <br>
+									标签的嵌套与并列关系 <br>
+									嵌套关系/父子关系
+									并列关系/兄弟关系
+									认识标签 <br>
+									head中的内容  <br>
+									常用标签属性  <br>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!--end-smooth-scrolling-->
+	<!-- //for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>

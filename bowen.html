@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>博文</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.min.js"></script>
+	<link type="image/x-icon" rel="shortcut icon" href="ico.ico">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="">
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<style>
+		.logo {
+			border-radius: 50%
+		}
+
+		.IMGTitle {
+			position: absolute;
+			width: 100%;
+			height: 40px;
+			background: #1e0d0d;
+			opacity: 0.3;
+			;
+			bottom: 10%;
+			text-align: center;
+			font-size: 28px;
+			color: #ffffee
+		}
+	</style>
+</head>
+
+<body style="">
+	<!-- container -->
+	<!-- header -->
+	<div id="home" class="header">
+		<div class="container">
+			<!-- top-hedader -->
+			<div class="top-header">
+				<!-- /logo -->
+				<!--top-nav---->
+				<div class="top-nav">
+					<div class="navigation">
+						<div class="logo">
+							<h1><a href="index.html"><span>U</span>YangYang</a></h1>
+						</div>
+						<div class="navigation-right">
+							<span class="menu"><img src="images/menu.png" alt=" "></span>
+							<nav class="link-effect-3" id="link-effect-3">
+								<ul class="nav1 nav nav-wil">
+									<li class="active"><a data-hover="Home" href="index.html">首页</a></li>
+									<li><a class="scroll" data-hover="About" href="#about">关于我</a></li>
+									<li><a class="scroll" data-hover="Experience" href="#work">我的项目</a></li>
+									<li><a class="scroll" data-hover="Portfolio" href="#port">我的作品</a></li>
+									<li><a class="scroll" data-hover="Blog" href="#blogs">博文</a></li>
+								</ul>
+							</nav>
+							<!-- script-for-menu -->
+							<script>
+								$("span.menu").click(function () {
+									$("ul.nav1").slideToggle(300, function () {
+										// Animation complete.
+									});
+								});
+							</script>
+							<!-- /script-for-menu -->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<!-- /top-hedader -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- about -->
+	<div id="about" class="about">
+
+
+		<div class="clearfix"> </div>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo1").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: false,
+					pagination: true,
+				});
+			});
+		</script>
+		<!-- Feedback -->
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo3").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: true,
+					pagination: true,
+				});
+			});
+		</script>
+	</div>
+	<!-- /about -->
+	<!-- services -->
+
+	<!-- services -->
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<div class="service-head text-center">
+				<h4>我所做的</h4>
+				<h3>我的 <span>项目</span></h3>
+				<span class="border one"></span>
+			</div>
+			<div class="time-main w3l-agile">
+				<div class="col-md-6 year-info">
+					<ul class="year">
+						<li>2019</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<ul class="col-md-6 timeline">
+					<li>
+						<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">认识HTML<a
+										href="bowens/认识HTML.html"></a></h4>
+
+							</div>
+							<div class="timeline-body">
+								<p>《全工艺压片设备模拟器》是一款能让你随时随地去练习压片的一款软件。
+									软件开发者 : 游洋洋
+									支持操作环境: 所有PC端+iOS+Android
+									软件授权类别: 免费软件
+									软件能够解决的问题
+									学习设备时不能一人配备一台设备供练习。
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
+
+	<!-- portfolio -->
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!--end-smooth-scrolling-->
+	<!-- //for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+
+
+
+
+	<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
+</body>
+
+</html>
